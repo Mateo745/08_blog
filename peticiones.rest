@@ -1,0 +1,12 @@
+@HOST=http://localhost:3000
+
+GET {{HOST}}/api/posts
+
+###
+POST {{HOST}}/api/posts
+
+###
+GET {{HOST}}/api/authors
+
+###
+POST {{HOST}}/api/authors
