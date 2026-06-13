@@ -4,9 +4,25 @@ GET {{HOST}}/api/posts
 
 ###
 POST {{HOST}}/api/posts
+Content-Type: application/json
+
+{
+    ""
+}
 
 ###
 GET {{HOST}}/api/authors
 
 ###
 POST {{HOST}}/api/authors
+Content-Type: application/json
+
+{
+    "email": "mateo@email.com",
+    "name": "Mateo Ibañez",
+    "image": "avatar_mateo.png"
+}
+
+
+###
+GET {{HOST}}/api/authors/2/posts
