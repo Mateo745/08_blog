@@ -3,15 +3,24 @@
 GET {{HOST}}/api/posts
 
 ###
+GET {{HOST}}/api/posts/15
+
+###
 POST {{HOST}}/api/posts
 Content-Type: application/json
 
 {
-    ""
+    "title": "Un post de prueba2",
+    "description": "Probando la inserción de post desde API por segunda vez",
+    "category": "Tecnología",
+    "authorsId": 1
 }
 
 ###
 GET {{HOST}}/api/authors
+
+###
+GET {{HOST}}/api/authors/3
 
 ###
 POST {{HOST}}/api/authors
@@ -25,4 +34,4 @@ Content-Type: application/json
 
 
 ###
-GET {{HOST}}/api/authors/2/posts
+GET {{HOST}}/api/authors/3/posts
